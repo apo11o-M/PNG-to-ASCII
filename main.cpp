@@ -18,10 +18,10 @@ int main() {
     int h = image.height();
     vector<vector<int>> arr; 
     
-    for (int i = 0; i < h; i++) {
+    for (int j = 0; j < h; j++) {
         arr.push_back(vector<int>());
-        for (int j = 0; j < w; j++) {
-            arr.at(i).push_back((int)image(i, j));
+        for (int i = 0; i < w; i++) {
+            arr.at(j).push_back((int)image(i, j));
         }
     }
 
@@ -33,9 +33,9 @@ int main() {
         return 1;
     }
 
-    for (int i = 0; i < h; i++) {
-        for (int j = 0; j < w; j++) {
-            resultFile << arr.at(i).at(j) << " ";
+    for (int j = 0; j < h; j++) {
+        for (int i = 0; i < w; i++) {
+            resultFile << arr.at(j).at(i) << " ";
         }
         resultFile << "\n";
     } 
