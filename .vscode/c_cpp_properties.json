@@ -1,20 +1,17 @@
 {
-    "env": {
-        "myDefaultIncludePath": ["${workspaceFolder}/**", "${workspaceFolder}/Dependencies/**"]
-    },
     "configurations": [
         {
             "name": "Win32",
             "includePath": [
-                "${myDefaultIncludePath}"
-                //"C:\\Users\\Rick Wang\\OneDrive\\Synced Documents\\ASCII Art\\Dependencies\\CImg-2.9.5_pre122220"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Dependencies/CImg-2.9.5_pre122220/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "windowsSdkVersion": "10.0.19041.0",
+            "windowsSdkVersion": "10.0.17763.0",
             "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.27.29110/bin/Hostx64/x64/cl.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
